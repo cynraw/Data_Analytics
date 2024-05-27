@@ -16,4 +16,5 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Downloaded a file containing the data we will be using for the bootcamp.
 
 ## Select statement in mysql
-- Used to work with columns.
+- Used to work with columns and select what columns you want to see in your output.
+  
