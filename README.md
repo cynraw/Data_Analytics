@@ -17,4 +17,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 
 ## Select statement in mysql
 - Used to work with columns and select what columns you want to see in your output.
+- You have to specify the database before querying the selected columns.
+- You can specify by double clicking on the database on the left menu or you can use the syntax:
+     - SELECT * FROM database_name.column_name;
   
