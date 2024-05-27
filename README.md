@@ -20,4 +20,8 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - You have to specify the database before querying the selected columns.
 - You can specify by double clicking on the database on the left menu or you can use the syntax:
      - SELECT * FROM database_name.column_name;
+- We can select all the columns or specific columns.
+     - SELECT * -selects all the columns in the database
+     - SELECT first_name -selects the column named first_name
+     - SELECT first_name,last_name,dob -selects all those columns mentioned
   
