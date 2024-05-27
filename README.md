@@ -14,4 +14,6 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 # Yeah Lets do this........ # Growth mindset
 - Started by installing mysql and configuring it.
 - Downloaded a file containing the data we will be using for the bootcamp.
-  
+
+## Select statement in mysql
+- Used to work with columns.
