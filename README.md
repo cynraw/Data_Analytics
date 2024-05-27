@@ -26,7 +26,8 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - SELECT first_name,last_name,dob -selects all those columns mentioned
 - N/B: Any math within mysql follows the rules of PEMDAS- this is the order of operations within mysql.
 - Stands for Parenthesis, Exponent, Multiplication, Division, Addition, Subtraction.
-- DISTINCT - selects only the unique values ie in a gender column it will return make and female.
+- DISTINCT - selects only the unique values ie in a gender column it will return make and female. (Like to reduce redundancy).
 - syntax:
       - SELECT DISTINCT gender
+  
   
