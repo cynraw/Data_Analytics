@@ -3,7 +3,7 @@ I am a data analyst(Manifesting). or rather (On God).
 
 Learning via Youtube (Alex the analyst free bootcamp series).
 
-## skills to be gained
+## skills to gained
  - SQL
  - Tableu
  - Power BI
