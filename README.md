@@ -34,5 +34,10 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Only returns the row that fulfil a certain condition.
 - Syntax:
      - SELECT * FROM employee_salary WHERE first_name = 'Leslie';
+
+## LIKE statement
+- Special characters added to LIKE statement %,
+- % means anything
+- _ means specific
   
   
