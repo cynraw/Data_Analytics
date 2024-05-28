@@ -49,6 +49,12 @@ Learning via Youtube (Alex the analyst free bootcamp series).
  - For example when you want to find the average age for both genders this is the sql statements for that:
      - SELECT gender, avg(age) FROM employee_demographics GROUP BY gender;
      - This statement returns a table containing the genders and the average ages for both genders.
+## LIMIT vs ALIASING
+- specifies how many row you want in your output.
+- Syntax:
+     - SELECT * FROM employee_demographics LIMIT 3;
+     - This returns the first 3 rows of the db.
+     - 
 
  ## ORDER BY statement
  - Sorts the results set in either ascending or descending order.
