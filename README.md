@@ -42,5 +42,17 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Syntax:
      - SELECT* FROM employee_demographics WHERE first_name LIKE 'A__%';
      - The statement implies that the filter should return a entity with the first name begining with A followed by two letters then anything comes after that.
-  
+
+ ## GROUP BY statement
+ - Groups together rows that have the same values in the specified columns.
+ - Once you group them together you can run an aggregate function of them.
+ - For example when you want to find the average age for both genders this is the sql statements for that:
+     - SELECT gender, avg(age) FROM employee_demographics GROUP BY gender;
+     - This statement returns a table containing the genders and the average ages for both genders.
+
+ ## ORDER BY statement
+ - Sorts the results set in either ascending or descending order.
+ - syntax:
+     - SELECT * FROM employee_demographics ORDER BY first_name;
+     - Returns the first names in descending order.
   
