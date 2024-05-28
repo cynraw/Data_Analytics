@@ -39,5 +39,8 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Special characters added to LIKE statement %,
 - % means anything
 - _ means specific
+- Syntax:
+     - SELECT* FROM employee_demographics WHERE first_name LIKE 'A__%';
+     - The statement implies that the filter should return a entity with the first name begining with A followed by two letters then anything comes after that.
   
   
