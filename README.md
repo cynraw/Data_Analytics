@@ -53,6 +53,6 @@ Learning via Youtube (Alex the analyst free bootcamp series).
  ## ORDER BY statement
  - Sorts the results set in either ascending or descending order.
  - syntax:
-     - SELECT * FROM employee_demographics ORDER BY first_name;
-     - Returns the first names in descending order.
+     - SELECT * FROM employee_demographics ORDER BY first_name ASC(or DSND);
+     - Returns the first names in ascending order.
   
