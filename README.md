@@ -15,7 +15,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Started by installing mysql and configuring it.
 - Downloaded a file containing the data we will be using for the bootcamp.
 
-## Select statement in mysql
+## SELECT statement in mysql
 - Used to work with columns and select what columns you want to see in your output.
 - You have to specify the database before querying the selected columns.
 - You can specify by double clicking on the database on the left menu or you can use the syntax:
@@ -29,5 +29,10 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - DISTINCT - selects only the unique values ie in a gender column it will return make and female. (Like to reduce redundancy).
 - Syntax:
      - SELECT DISTINCT gender
+## WHERE statement in mysql
+- Used to filter rows of data in records.
+- Only returns the row that fulfil a certain condition.
+- Syntax:
+       - SELECT * FROM employee_salary WHERE first_name = 'Leslie';
   
   
