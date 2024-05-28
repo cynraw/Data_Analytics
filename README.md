@@ -33,6 +33,6 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Used to filter rows of data in records.
 - Only returns the row that fulfil a certain condition.
 - Syntax:
-       - SELECT * FROM employee_salary WHERE first_name = 'Leslie';
+     - SELECT * FROM employee_salary WHERE first_name = 'Leslie';
   
   
