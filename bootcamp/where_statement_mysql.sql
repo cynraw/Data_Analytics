@@ -27,3 +27,4 @@ WHERE first_name LIKE 'a___%'
 SELECT * 
 FROM employee_demographics
 WHERE birth_date LIKE '1989%'
+;
