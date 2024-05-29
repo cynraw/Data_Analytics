@@ -54,11 +54,22 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Syntax:
      - SELECT * FROM employee_demographics LIMIT 3;
      - This returns the first 3 rows of the db.
-     - 
 
  ## ORDER BY statement
  - Sorts the results set in either ascending or descending order.
  - syntax:
      - SELECT * FROM employee_demographics ORDER BY first_name ASC(or DSND);
      - Returns the first names in ascending order.
-  
+
+  ## Joins in mysql
+- Allows you to combine two tables or more together if they have common columns.
+- Not a must that the column names have to be same but the data in it should be atleast similar.
+- joins could be:
+     - Inner joins
+     - outer joins
+     - self joins
+    ### Inner joins
+  - Returns rows that are the same in both columns from both tables.
+  - Used to combine two rows from two or more tables based on a related column between them.
+  - syntax:
+     - SELECT* FROM employee_demographics INNER JOIN employee_salary ON employee_demographics.employee_id = employee_salary.employee_id
