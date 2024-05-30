@@ -30,7 +30,7 @@ LEFT JOIN employee_salary AS sal
 	ON dem.employee_id = sal.employee_id
 ;
 
--- Right join dor=es the opposite of the left join 
+-- Right join doses the opposite of the left join 
 -- Rows that are on the right table and not on the left table their values are given as null.alter
 SELECT * 
 FROM employee_demographics AS dem
