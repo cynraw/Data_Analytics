@@ -124,3 +124,15 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Syntax:
      - SELECT first_name, REPLACE(first_name, 'a', 'z')
      - second parameter is the character you wish to replace and the third character is the character to replace.
+
+### Locate()
+- Returns a the position of a specific character in a string.
+- Syntax:
+     - SELECT LOCATE('a', 'Cynthia') Returns 7
+
+### concat()
+- Combines two columns together
+- Syntax:
+     - SELECT first_name, last_name,
+     - CONCAT(first_name, ' ', last_name) AS full_name
+     - FROM employee_demographics;
