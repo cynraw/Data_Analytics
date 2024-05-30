@@ -18,7 +18,7 @@ GROUP BY gender
 -- Sorts the resukts set in either assending or descending order
 SELECT *
 FROM employee_demographics
-ORDER BY gender, age
+ORDER BY gender, age DESC
 ; 
 
 
