@@ -78,10 +78,17 @@ Learning via Youtube (Alex the analyst free bootcamp series).
     - Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
     - There are two types of outer joins:
          - Left Outer Join (or Left Join): Returns all rows from the left table, and the matched rows from the right table. If no match is found, the result is NULL from the right table.
-          - Right Outer Join (or Right Join): Returns all rows from the right table, and the matched rows from the left table. If no match is found, the result is NULL from the left table.
+         - Right Outer Join (or Right Join): Returns all rows from the right table, and the matched rows from the left table. If no match is found, the result is NULL from the left table.
       ### Self join
       - A self join is a join in which a table is joined with itself.
       - It is useful for comparing rows within the same table.
       - This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
 
+## Unions in mySQL
+- Allows you to combine rows together.
+- Can be from same or separate tables.
+- Syntax:
+     - SELECT age, gender FROM employee_demographics UNION SELECT first_name, last_name FROM employee_salary;
+- Union distinct Only selects the unique values in both table rows
+- Union All selects all the rows in both tables even the duplicate
       
