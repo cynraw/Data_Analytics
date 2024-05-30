@@ -92,3 +92,35 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Union distinct Only selects the unique values in both table rows
 - Union All selects all the rows in both tables even the duplicate
       
+## String Functions in mySQL
+- Built in functions that help us work with strings.
+### Length()
+- Returns the length of a string.
+- Syntax:
+     - SELECT length('allstars') the value returned will  be 8.
+ - Use case: Checking the length of a phone number.
+
+### Upper() and lower()
+- Changes the letters in a string to either lower case or upper case.
+- Syntax:
+     - SELECT UPPPER('sky');
+     - SELECT LOWER('SKY');
+ - Use case in standardization eg names to all upppercase.
+
+### Trim()
+- Gets rid of the whitespace either before or after a string.
+- There are two types left trim and right trim.
+- Syntax:
+     - SELECT TRIM('       sky    ')
+ 
+### Substring()
+- Left(string,2) returns the first 2 letters of the string from the left.
+- Substring(string, 2,3) returns a string that begins 2 letters from the initial string and goes 3 characters forward.
+-  Syntax:
+     - Substring(birth_date, 6, 2)
+
+### Replace()
+- Replaces a string character with another character you wish.
+- Syntax:
+     - SELECT first_name, REPLACE(first_name, 'a', 'z')
+     - second parameter is the character you wish to replace and the third character is the character to replace.
