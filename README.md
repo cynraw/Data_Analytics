@@ -136,3 +136,29 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - SELECT first_name, last_name,
      - CONCAT(first_name, ' ', last_name) AS full_name
      - FROM employee_demographics;
+## Subquery in mysql
+- Query within a query.
+- Can be used in WHERE,SELECT AND FROM statements
+- Subquery in where clause
+     - SELECT *
+     - FROM employee_demographics
+     - WHERE employee_id IN
+     - ( SELECT employee_id
+     - FROM employee_salary
+     - WHERE dept_id = 1);
+- Subquery in the select statements
+     - SELECT first_name, salary,
+     - (SELECT AVG(salary)
+     - FROM employee_salary)
+     - FROM employee_salary;
+- Subquery in the FROM statement
+     - SELECT AVG(max_age)
+     - FROM
+     - (SELECT gender,
+     - AVG(age) AS avg_age,
+     - MAX(age) AS max_age,
+     - MIN(age) AS min_age,
+     - COUNT(age)
+     - FROM employee_demographics
+     - GROUP BY  gender) AS agg_table;
+
