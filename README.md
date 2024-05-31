@@ -181,6 +181,11 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - ON dem.employee_id = sal.employee_id;
 - Gives id to the gender female from one to 4 and restarts for male 1-7
 - RANK()assigns a rank to each row within the partition of a result set.
-- The rank of a row is one plus the number of ranks that come before it. It can have duplicates 
-  
+- The rank of a row is one plus the number of ranks that come before it. It can have duplicates
+
+## CTEs(Common Table Expression) In mysql
+- Allows you to define a sub query block that you can then reference within the main query.
+- WITH - keyword to define CTE
+- You can use the CTE only immediately after you have defined it.
+- 
 
