@@ -163,5 +163,24 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - GROUP BY  gender) AS agg_table;
 
 ## Windows Functions in mysql
-- 
+- Window functions perform calculations across a set of table rows that are somehow related to the current row.
+- Useful for complex queries such as calculating running totals, moving averages, or ranking results.
+- Rolling totals
+- Adds the previous salary to the current till the order by is fulfilled
+     - SELECT dem.first_name, dem.last_name, salary,
+     - SUM(salary) OVER(PARTITION BY gender ORDER BY dem.employee_id)
+     - FROM employee_demographics AS dem
+     - JOIN employee_salary AS sal
+     - ON dem.employee_id = sal.employee_id;
+-  OVER(PARTITION BY gender ORDER BY dem.employee_id) this is the windows function that performs that operation of rolling sum on both genders.
+-  ROW_NUMBER() Aggregate function that counts the number of rows and gives it a unique id.
+     - SELECT dem.first_name, dem.last_name, salary,
+     - ROW_NUMBER() OVER(PARTITION BY gender)
+     - FROM employee_demographics AS dem
+     - JOIN employee_salary AS sal
+     - ON dem.employee_id = sal.employee_id;
+- Gives id to the gender female from one to 4 and restarts for male 1-7
+- RANK()assigns a rank to each row within the partition of a result set.
+- The rank of a row is one plus the number of ranks that come before it. It can have duplicates 
+  
 
