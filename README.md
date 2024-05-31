@@ -163,5 +163,5 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - GROUP BY  gender) AS agg_table;
 
 ## Windows Functions in mysql
-
+- 
 
