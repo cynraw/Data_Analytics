@@ -162,3 +162,6 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - FROM employee_demographics
      - GROUP BY  gender) AS agg_table;
 
+## Windows Functions in mysql
+
+
