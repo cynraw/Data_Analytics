@@ -187,5 +187,15 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Allows you to define a sub query block that you can then reference within the main query.
 - WITH - keyword to define CTE
 - You can use the CTE only immediately after you have defined it.
-- 
+-Example:
+     - WITH CTE_example AS
+     - (SELECT gender, AVG(salary) AS avg_sal, MAX(salary) AS max_sal,
+     - MIN(salary) AS min_sal, COUNT(salary) AS count_sal
+     - FROM employee_demographics AS dem
+     - JOIN employee_salary AS sal
+     - ON dem.employee_id = sal.employee_id
+     - GROUP BY gender)
+     - SELECT AVG(avg_sal)
+     - FROM CTE_example;
+- Instead of writing the column names as alias we can define the column names insde the parenthesis of the CTE name i.e: CTE_Example(Gender, AVG_sal, MAX_sal, MIN_sal, COUNT_sal)
 
