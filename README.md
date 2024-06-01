@@ -220,4 +220,30 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - SELECT *
      - FROM salary_over_50k;
 
-
+## Stored Procedures in Mysql
+- Way to store mysql code in a way that you can use it over and over again
+- Enhances reusability of complex codes, and code that are used oftenly.
+- Creating a procedure
+- You can specify the database by using the keyword USE ie USE parks_recreation...
+     - CREATE PROCEDURE large_salary()
+     - SELECT *
+     - FROM employee_salary
+     - WHERE salary >= 50000;
+     - CALL large_salary();
+- We can separate queries in a storage procedure by using a delimeter.
+- Using a delimeter
+     - DELIMITER $$
+     - CREATE PROCEDURE large_salary2()
+     - BEGIN
+     - SELECT *
+     - FROM employee_salary
+     - WHERE salary >= 50000;
+     - SELECT *
+     - FROM employee_salary
+     - WHERE salary >= 10000
+     - END $$
+     - DELIMITER ;
+     - CALL large_salary2()
+- We can pass parameters to the name of the stored procedure which can later be used during calling the procedure.
+- CREATE PROCEDURE large_salary3(p_employee_id INT)
+- Later... CALL large_salary3(1)
