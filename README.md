@@ -247,3 +247,13 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - We can pass parameters to the name of the stored procedure which can later be used during calling the procedure.
 - CREATE PROCEDURE large_salary3(p_employee_id INT)
 - Later... CALL large_salary3(1)
+
+## Triggers and events in mysql
+- Triggers are procedures that automatically execute in response to certain events on a particular table, while events are scheduled actions that run at specified times.
+- A trigger is a database object that is associated with a table and is activated by a certain event (e.g., INSERT, UPDATE, DELETE).
+- Helps in automating some tasks.
+- Event - What happens when it is scheduled.
+- Example use case is creating an event that checks for employees over 60 and delete their data from the employees tables i.e retires them.
+
+
+
