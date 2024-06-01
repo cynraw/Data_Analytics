@@ -199,3 +199,25 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - FROM CTE_example;
 - Instead of writing the column names as alias we can define the column names insde the parenthesis of the CTE name i.e: CTE_Example(Gender, AVG_sal, MAX_sal, MIN_sal, COUNT_sal)
 
+## Temporary tables
+- Only visible to the session to which they are created in.
+- When you exit my sql and come back it not gonna be there.
+- Use case to store intermediate results for complex queries
+- Example:
+     - CREATE TEMPORARY TABLE temp_table
+     - (first_name varchar(50),
+     - last_name varchar(50),
+     - fav_movie varchar(50));
+     - SELECT *
+     - FROM temp_table;
+- Second way to create a temp table
+     - SELECT *
+     - FROM employee_salary;
+     - CREATE TEMPORARY TABLE salary_over_50k
+     - SELECT *
+     - FROM employee_salary
+     - WHERE salary >= 50000;
+     - SELECT *
+     - FROM salary_over_50k;
+
+
