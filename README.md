@@ -83,7 +83,10 @@ Learning via Youtube (Alex the analyst free bootcamp series).
       - A self join is a join in which a table is joined with itself.
       - It is useful for comparing rows within the same table.
       - This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
-
+      ### Cross joins
+      - A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
+      - This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
+      
 ## Unions in mySQL
 - Allows you to combine rows together.
 - Can be from same or separate tables.
