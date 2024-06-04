@@ -69,8 +69,8 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - outer joins
      - self joins
 ### Inner joins
-  - Returns rows that are the same in both columns from both tables.
-  - Used to combine two rows from two or more tables based on a related column between them.
+- Returns rows that are the same in both columns from both tables.
+- Used to combine two rows from two or more tables based on a related column between them.
   - syntax:
      - SELECT* FROM employee_demographics INNER JOIN employee_salary ON employee_demographics.employee_id = employee_salary.employee_id
 
