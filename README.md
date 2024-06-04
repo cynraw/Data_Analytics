@@ -73,17 +73,20 @@ Learning via Youtube (Alex the analyst free bootcamp series).
   - Used to combine two rows from two or more tables based on a related column between them.
   - syntax:
      - SELECT* FROM employee_demographics INNER JOIN employee_salary ON employee_demographics.employee_id = employee_salary.employee_id
+
 ### Outer joins
-    - An outer join in MySQL is used to combine rows from two or more tables based on a related column between them.
-    - Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
-    - There are two types of outer joins:
+- An outer join in MySQL is used to combine rows from two or more tables based on a related column between them.
+- Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
+- There are two types of outer joins:
          - Left Outer Join (or Left Join): Returns all rows from the left table, and the matched rows from the right table. If no match is found, the result is NULL from the right table.
          - Right Outer Join (or Right Join): Returns all rows from the right table, and the matched rows from the left table. If no match is found, the result is NULL from the left table.
-      ### Self join
+
+### Self join
       - A self join is a join in which a table is joined with itself.
       - It is useful for comparing rows within the same table.
       - This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
-      ### Cross joins
+      
+### Cross joins
       - A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
       - This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
       
