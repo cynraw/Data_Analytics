@@ -82,13 +82,13 @@ Learning via Youtube (Alex the analyst free bootcamp series).
          - Right Outer Join (or Right Join): Returns all rows from the right table, and the matched rows from the left table. If no match is found, the result is NULL from the left table.
 
 ### Self join
-      - A self join is a join in which a table is joined with itself.
-      - It is useful for comparing rows within the same table.
-      - This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
+- A self join is a join in which a table is joined with itself.
+- It is useful for comparing rows within the same table.
+- This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
       
 ### Cross joins
-      - A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
-      - This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
+- A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
+- This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
       
 ## Unions in mySQL
 - Allows you to combine rows together.
