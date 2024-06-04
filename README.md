@@ -68,12 +68,12 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - Inner joins
      - outer joins
      - self joins
-   ### Inner joins
+### Inner joins
   - Returns rows that are the same in both columns from both tables.
   - Used to combine two rows from two or more tables based on a related column between them.
   - syntax:
      - SELECT* FROM employee_demographics INNER JOIN employee_salary ON employee_demographics.employee_id = employee_salary.employee_id
-    ### Outer joins
+### Outer joins
     - An outer join in MySQL is used to combine rows from two or more tables based on a related column between them.
     - Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
     - There are two types of outer joins:
