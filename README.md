@@ -280,4 +280,8 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 
 #### Standardization
 - I.e Removing white spaces before the name of a rows entity
+- After altering a column you have to update the table.
+
+#### Removing null values
+- Not all null values can be removed only the ones that can be calculated cumulatively.
 
