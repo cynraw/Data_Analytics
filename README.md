@@ -278,6 +278,6 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 #### Removing duplicates
 - Stage the data and delete the duplicated rows
 
-### Standardization
+#### Standardization
 - I.e Removing white spaces before the name of a rows entity
 
