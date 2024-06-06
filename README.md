@@ -274,5 +274,10 @@ Learning via Youtube (Alex the analyst free bootcamp series).
  - Schema Consistency: By creating a new table with the same structure as the layoffs table, you ensure that the data types and constraints are consistent, which helps maintain data integrity during the transfer process.
  - Data Backup: This step creates a backup of the current state of the layoffs table. This can be useful for recovery purposes or for historical comparisons.
  - Isolation of Changes: Any changes or updates can be applied to the layoffs_staging table first. This isolation helps in testing and verifying the impact of changes without risking data corruption or loss in the primary table.
+   
+#### Removing duplicates
+- Stage the data and delete the duplicated rows
 
+### Standardization
+- I.e Removing white spaces before the name of a rows entity
 
