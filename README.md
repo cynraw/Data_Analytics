@@ -259,7 +259,20 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - A trigger is a database object that is associated with a table and is activated by a certain event (e.g., INSERT, UPDATE, DELETE).
 - Helps in automating some tasks.
 - Event - What happens when it is scheduled.
-- Example use case is creating an event that checks for employees over 60 and delete their data from the employees tables i.e retires them.
+- Example use case is creating an event that checks for employees over 60 and delete their data from the employees tables i.e retires them
 
+## DATA CLEANING PROJECT IN MYSQL
+- To get data in a more usable format to fix issues in the raw data so that you can easily use it to visualize the data.
+- Steps:
+     - Remove duplicates
+     - Standardize data
+     - Null values
+     - Remove any unnecessary columns
+ - Data Staging and Preparation.
+ - Data Staging: The layoffs_staging table serves as a staging area for data.
+ - This allows you to manipulate, clean, and verify data without affecting the original layoffs table.
+ - Schema Consistency: By creating a new table with the same structure as the layoffs table, you ensure that the data types and constraints are consistent, which helps maintain data integrity during the transfer process.
+ - Data Backup: This step creates a backup of the current state of the layoffs table. This can be useful for recovery purposes or for historical comparisons.
+ - Isolation of Changes: Any changes or updates can be applied to the layoffs_staging table first. This isolation helps in testing and verifying the impact of changes without risking data corruption or loss in the primary table.
 
 
