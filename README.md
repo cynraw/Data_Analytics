@@ -285,3 +285,5 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 #### Removing null values
 - Not all null values can be removed only the ones that can be calculated cumulatively.
 
+
+
