@@ -69,6 +69,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - outer joins
      - self joins
 ### Inner joins
+- An INNER JOIN returns rows when there is a match in both tables.
 - Returns rows that are the same in both columns from both tables.
 - Used to combine two rows from two or more tables based on a related column between them.
   - syntax:
@@ -89,6 +90,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 ### Cross joins
 - A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
 - This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
+- A CROSS JOIN returns the Cartesian product of the two tables, i.e., all possible combinations of rows.
       
 ## Unions in mySQL
 - Allows you to combine rows together.
