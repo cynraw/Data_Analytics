@@ -271,6 +271,9 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - Null values
      - Remove any unnecessary columns
  - Data Staging and Preparation.
+ - To create a staging table:
+ - CREATE TABLE layoffs_staging LIKE layoffs(Creates the columns similar to the one in layoffs)
+ - To copy the data from layoffs to layoffs_staging INSERT layoffs_staging SELECT * FROM layoffs   
  - Data Staging: The layoffs_staging table serves as a staging area for data.
  - This allows you to manipulate, clean, and verify data without affecting the original layoffs table.
  - Schema Consistency: By creating a new table with the same structure as the layoffs table, you ensure that the data types and constraints are consistent, which helps maintain data integrity during the transfer process.
