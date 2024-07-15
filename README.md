@@ -287,10 +287,16 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - SELECT *,
 - ROW_NUMBER() OVER(PARTITION BY column names)AS row_num
 - FROM layoffs_staging
+- Since we cannot delete using a cte we have to create another staging table.
 
 #### Standardization
 - I.e Removing white spaces before the name of a rows entity
+- SELECT company, trim(company)
+- FROM layoffs_staging2
+- The trim() function removes white spaces at the begining of a string.
 - After altering a column you have to update the table.
+- UPDATE layoffs_staging2
+- SET company = trim(company)
 
 #### Removing null values
 - Not all null values can be removed only the ones that can be calculated cumulatively.
