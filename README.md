@@ -282,6 +282,11 @@ Learning via Youtube (Alex the analyst free bootcamp series).
    
 #### Removing duplicates
 - Stage the data and delete the duplicated rows
+- To check duplicates you first have to have a uniquer identifiers of the columns ie row numbers
+- To create a row number:
+- SELECT *,
+- ROW_NUMBER() OVER(PARTITION BY column names)AS row_num
+- FROM layoffs_staging
 
 #### Standardization
 - I.e Removing white spaces before the name of a rows entity
