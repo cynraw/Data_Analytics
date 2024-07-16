@@ -68,22 +68,30 @@ Learning via Youtube (Alex the analyst free bootcamp series).
      - Inner joins
      - outer joins
      - self joins
-    ### Inner joins
-  - Returns rows that are the same in both columns from both tables.
-  - Used to combine two rows from two or more tables based on a related column between them.
+### Inner joins
+- An INNER JOIN returns rows when there is a match in both tables.
+- Returns rows that are the same in both columns from both tables.
+- Used to combine two rows from two or more tables based on a related column between them.
   - syntax:
      - SELECT* FROM employee_demographics INNER JOIN employee_salary ON employee_demographics.employee_id = employee_salary.employee_id
-     ### Outer joins
-    - An outer join in MySQL is used to combine rows from two or more tables based on a related column between them.
-    - Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
-    - There are two types of outer joins:
+
+### Outer joins
+- An outer join in MySQL is used to combine rows from two or more tables based on a related column between them.
+- Unlike inner joins, outer joins return all the rows from one table and the matched rows from the other table. If there is no match, the result is NULL on the side where there is no match.
+- There are two types of outer joins:
          - Left Outer Join (or Left Join): Returns all rows from the left table, and the matched rows from the right table. If no match is found, the result is NULL from the right table.
          - Right Outer Join (or Right Join): Returns all rows from the right table, and the matched rows from the left table. If no match is found, the result is NULL from the left table.
-      ### Self join
-      - A self join is a join in which a table is joined with itself.
-      - It is useful for comparing rows within the same table.
-      - This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
 
+### Self join
+- A self join is a join in which a table is joined with itself.
+- It is useful for comparing rows within the same table.
+- This type of join is particularly important when you need to retrieve related data that exists in the same table, such as hierarchical data, comparing records, or finding duplicates.
+      
+### Cross joins
+- A CROSS JOIN in SQL combines every row from one table with every row from another table, creating all possible pairs.
+- This is useful when you want to ensure that every possible combination is considered, especially in scenarios like pairing students with subjects to track attendances or enrollments.
+- A CROSS JOIN returns the Cartesian product of the two tables, i.e., all possible combinations of rows.
+      
 ## Unions in mySQL
 - Allows you to combine rows together.
 - Can be from same or separate tables.
@@ -253,7 +261,49 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - A trigger is a database object that is associated with a table and is activated by a certain event (e.g., INSERT, UPDATE, DELETE).
 - Helps in automating some tasks.
 - Event - What happens when it is scheduled.
-- Example use case is creating an event that checks for employees over 60 and delete their data from the employees tables i.e retires them.
+- Example use case is creating an event that checks for employees over 60 and delete their data from the employees tables i.e retires them
+
+## DATA CLEANING PROJECT IN MYSQL
+- To get data in a more usable format to fix issues in the raw data so that you can easily use it to visualize the data.
+- Steps:
+     - Remove duplicates
+     - Standardize data
+     - Null values
+     - Remove any unnecessary columns
+ - Data Staging and Preparation.
+ - To create a staging table:
+ - CREATE TABLE layoffs_staging LIKE layoffs(Creates the columns similar to the one in layoffs)
+ - To copy the data from layoffs to layoffs_staging INSERT layoffs_staging SELECT * FROM layoffs   
+ - Data Staging: The layoffs_staging table serves as a staging area for data.
+ - This allows you to manipulate, clean, and verify data without affecting the original layoffs table.
+ - Schema Consistency: By creating a new table with the same structure as the layoffs table, you ensure that the data types and constraints are consistent, which helps maintain data integrity during the transfer process.
+ - Data Backup: This step creates a backup of the current state of the layoffs table. This can be useful for recovery purposes or for historical comparisons.
+ - Isolation of Changes: Any changes or updates can be applied to the layoffs_staging table first. This isolation helps in testing and verifying the impact of changes without risking data corruption or loss in the primary table.
+   
+#### Removing duplicates
+- Stage the data and delete the duplicated rows
+- To check duplicates you first have to have a uniquer identifiers of the columns ie row numbers
+- To create a row number:
+- SELECT *,
+- ROW_NUMBER() OVER(PARTITION BY column names)AS row_num
+- FROM layoffs_staging
+- Since we cannot delete using a cte we have to create another staging table.
+
+#### Standardization
+- I.e Removing white spaces before the name of a rows entity
+- SELECT company, trim(company)
+- FROM layoffs_staging2
+- The trim() function removes white spaces at the begining of a string.
+- After altering a column you have to update the table.
+- UPDATE layoffs_staging2
+- SET company = trim(company)
+
+#### Removing null values
+- Not all null values can be removed only the ones that can be calculated cumulatively or populated.
+- Remove columns that are not relevant going forward.
+- Also remove row_num column as it is  no longer needed.
+- ALTER TABLE layoffs_staging2
+- DROP COLUMN row_num;
 
 
 
