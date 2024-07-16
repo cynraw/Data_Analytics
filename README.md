@@ -300,6 +300,10 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 
 #### Removing null values
 - Not all null values can be removed only the ones that can be calculated cumulatively or populated.
+- Remove columns that are not relevant going forward.
+- Also remove row_num column as it is  no longer needed.
+- ALTER TABLE layoffs_staging2
+- DROP COLUMN row_num;
 
 
 
