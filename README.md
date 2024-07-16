@@ -299,7 +299,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - SET company = trim(company)
 
 #### Removing null values
-- Not all null values can be removed only the ones that can be calculated cumulatively.
+- Not all null values can be removed only the ones that can be calculated cumulatively or populated.
 
 
 
