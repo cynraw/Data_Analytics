@@ -11,7 +11,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
  - Python
  - Cloud(AWS/Azure)
 
-# Yeah Lets do this........ # Growth mindset
+# Yeah Lets do this..... # Growth mindset
 - Started by installing mysql and configuring it.
 - Downloaded a file containing the data we will be using for the bootcamp.
 
