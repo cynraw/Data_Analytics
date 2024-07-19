@@ -15,6 +15,7 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - Started by installing mysql and configuring it.
 - Downloaded a file containing the data we will be using for the bootcamp.
 
+# SQL
 ## SELECT statement in mysql
 - Used to work with columns and select what columns you want to see in your output.
 - You have to specify the database before querying the selected columns.
@@ -305,5 +306,11 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - ALTER TABLE layoffs_staging2
 - DROP COLUMN row_num;
 
+
+# EXCEL
+## PivotTable
+- PivotTable is a functionality in Excel which helps you organize and analyze data.
+- It lets you add and remove values, perform calculations, and to filter and sort data sets.
+- PivotTable helps you structure and organize data to understand large data sets.
 
 
