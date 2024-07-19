@@ -313,6 +313,3 @@ Learning via Youtube (Alex the analyst free bootcamp series).
 - It lets you add and remove values, perform calculations, and to filter and sort data sets.
 - PivotTable helps you structure and organize data to understand large data sets.
 
-
-
-
