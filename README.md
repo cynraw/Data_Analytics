@@ -1,8 +1,4 @@
 # Data_Analytics
-I am a data analyst(manifesting) or rather (On God).
-
-Learning via Youtube (Alex the analyst free bootcamp series).
-
 ## skills to gained
  - SQL
  - Tableu
