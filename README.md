@@ -7,7 +7,7 @@
  - Python
  - Cloud(AWS/Azure)
 
-# Yeah Lets do this...   # Growth mindset
+# Yeah Lets do this...  
 - Started by installing mysql and configuring it.
 - Downloaded a file containing the data we will be using for the bootcamp.
 
