@@ -1,4 +1,4 @@
-# Data_Analytics
+# Data Analytics
 ## skills 
  - SQL
  - Tableu
