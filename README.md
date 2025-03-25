@@ -1,5 +1,5 @@
 # Data_Analytics
-## skills to gained
+## skills 
  - SQL
  - Tableu
  - Power BI
